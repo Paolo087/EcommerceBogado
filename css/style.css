@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  min-width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-rows: 100px auto 100px;
+    color: burlywood;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+}
+
+@media (min-width: 900px) {
+  .grid-container {
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.card {
+  margin: 2rem;
+  max-width: 300px;
+  padding: 2rem;
+  box-shadow: o 10px 30px -10px rgba(0, 0, 0, 0.45);
+  background-color: #b3b3b2;
+  animation-name: animationCard;
+  animation-duration: 2s;
+}
+
+@keyframes animationCard {
+  0% {
+    background-color: #ffffff;
+  }
+  25% {
+    background-color: #e5e5e5;
+  }
+  50% {
+    background-color: #c8c8c7;
+  }
+  75% {
+    background-color: #b0b0b0;
+  }
+  100% {
+    background-color: #b3b3b2;
+  }
+}
+
+.cardImg {
+  max-height: 250px;
+  max-width: 250px;
+  min-width: 250px;
+  min-width: 250px;
+}
+
+.video {
+  align-items: center;
+}
+
+.logo {
+  max-width: 30px;
+  max-width: 30px;
+  padding-right: 1rem;
+}
+
+.iconos {
+  max-width: 30px;
+  max-width: 30px;
+  height: 30px;
+}
+
+.nav1 {
+  display: flex;
+  padding: 0.5rem;
+  background-color: red;
+  align-items: center;
+}
+
+.nav-left {
+  align-items: center;
+  justify-self: center;
+}
+
+.nav-right {
+  margin-left: auto;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  flex-wrap: wrap;
+  padding: 0.4rem;
+  background-color: blueviolet;
+}
+
+.ayudaIcon {
+  max-width: 30px;
+  max-width: 30px;
+  padding-right: 1rem;
+}
+
+.iconosFooter {
+  max-width: 30px;
+  max-width: 30px;
+  height: 30px;
+}
+
+.footer1 {
+  display: flex;
+  padding: 0.5rem;
+  background-color: red;
+  align-items: center;
+}
+
+.footer-left {
+  align-items: center;
+  justify-self: center;
+}
+
+.footer-right {
+  margin-left: auto;
+}
+
+.sectionCard {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.principalImg {
+  display: flex;
+  align-items: center;
+}
+
+.cardImgTitle {
+  color: black;
+  font: arial;
+}
+
+.cardDescription {
+  color: black;
+  font: arial;
+}
+
+.inicio-link {
+  padding: 0 1rem 0 0;
+}

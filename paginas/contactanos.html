@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Contactanos</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav1">
+        <div class="nav-left">
+          <img class="logo" src="../iconos/logo.jpeg" alt="" />
+          <a class="inicio-link" href="../index.html">Inicio</a>
+        </div>
+        <div class="nav-right">
+          <img class="iconos" src="../iconos/carritoIcon.jpg" alt="" />
+          <img class="iconos" src="../iconos/ajusteIcon.png" alt="" />
+          <img class="iconos" src="../iconos/userIcon.png" alt="" />
+        </div>
+      </div>
+      <nav>
+        <div class="nav2">
+          <div class="navB1">
+            <a href="categoria.html">Categoria</a>
+          </div>
+          <div class="navB2">
+            <a href="productos.html">Productos</a>
+          </div>
+          <div class="navB3"><a href="ofertas.html">Ofertas</a></div>
+          <div class="navB4">
+            <a href="contactanos.html">Contactanos</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <form action="">
+      <fieldset>
+        <legend>Completa el formulario para contactarnos con usted</legend>
+
+        <label for="Nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" />
+        <br />
+
+        <label for="Apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" />
+        <br />
+
+        <label for="Email">Email</label>
+        <input type="text" name="email" id="email" />
+        <br />
+
+        <label for="ConsignaGeneral">Consigna General</label>
+        <select name="consignageneral" id="consignageneral">
+          <option value="ConsignaGeneral1">Reclamo de envio</option>
+          <option value="ConsignaGeneral2">Problemas ara pagar</option>
+          <option value="ConsignaGeneral3">
+            No es ek mismpo producto comprado
+          </option>
+          <option value="ConsignaGeneral4">Otros</option>
+        </select>
+        <br />
+
+        <label for="Detalle">Si elegi otros, detalle el problema</label>
+        <br />
+        <textarea name="detalle" id="detalle" cols="30" rows="10"></textarea>
+        <br />
+
+        <label for="aceptarNoti">Recibir notificaciones</label>
+        <br />
+        <label for="aceptarNotiSi">Si</label>
+        <input type="radio" name="aceptarNotificaciones" value="1" />
+        <label for="aceptarNotiNo">No</label>
+        <input type="radio" name="aceptarNotificaciones" value="1" />
+        <br />
+
+        <input type="reset" value="Limpiar formulario" />
+        <input type="submit" value="Enviar" />
+      </fieldset>
+    </form>
+    <footer>
+      <div class="footer1">
+        <div class="footer-left">
+          Ayuda
+          <img class="ayudaIcon" src="../iconos/ayudaIcon.png" alt="" />
+        </div>
+        <div class="footer-right">
+          <img class="iconosFooter" src="../iconos/carritoIcon.jpg" alt="" />
+          <img class="iconosFooter" src="../iconos/ajusteIcon.png" alt="" />
+          <img class="iconosFooter" src="../iconos/userIcon.png" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
