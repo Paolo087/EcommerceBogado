@@ -4,51 +4,146 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Ofertas</title>
   </head>
   <body>
     <header>
-      <div class="nav1">
-        <div class="nav-left">
-          <img class="logo" src="../iconos/logo.jpeg" alt="" />
-          <a class="inicio-link" href="../index.html">Inicio</a>
-        </div>
-        <div class="nav-right">
-          <img class="iconos" src="../iconos/carritoIcon.jpg" alt="" />
-          <img class="iconos" src="../iconos/ajusteIcon.png" alt="" />
-          <img class="iconos" src="../iconos/userIcon.png" alt="" />
-        </div>
-      </div>
-      <nav>
-        <div class="nav2">
-          <div class="navB1">
-            <a href="categoria.html">Categoria</a>
-          </div>
-          <div class="navB2">
-            <a href="productos.html">Productos</a>
-          </div>
-          <div class="navB3"><a href="ofertas.html">Ofertas</a></div>
-          <div class="navB4">
-            <a href="contactanos.html">Contactanos</a>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categoria
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="categoria.html">Categoria</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ofertas.html">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactanos.html">Contactanos</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
           </div>
         </div>
       </nav>
     </header>
-    <label for="TituloOfertas">Productos en Ofertas!!!</label>
-    <section>
-      <img src="../imagenes/ofertaImg1.jpeg" alt="" />
-      <img src="../imagenes/ofertaImg2.jpeg" alt="" />
-      <img src="../imagenes/ofertaImg3.jpeg" alt="" />
+    <div class="tituloOfertas">
+      <label for="TituloOfertas">Productos en Ofertas!!!</label>
+    </div>
+    <section class="sectionCard">
+      <div class="card">
+        <img src="../imagenes/ofertaImg1.jpeg" alt="" class="cardImg" />
+        <h2 class="cardImgTitle">Remera</h2>
+        <p class="cardDescription">Remera matizada</p>
+      </div>
+      <div class="card">
+        <img src="../imagenes/ofertaImg2.jpeg" alt="" class="cardImg" />
+        <h2 class="cardImgTitle">Sillón</h2>
+        <p class="cardDescription">Sillón rojo</p>
+      </div>
+      <div class="card">
+        <img src="../imagenes/ofertaImg3.jpeg" alt="" class="cardImg" />
+        <h2 class="cardImgTitle">Armario</h2>
+        <p class="cardDescription">Armario de madera</p>
+      </div>
     </section>
-    <section>
-      <img src="../imagenes/ofertaImg4.jpeg" alt="" />
-      <img src="../imagenes/ofertaImg5.jpeg" alt="" />
-      <img src="../imagenes/ofertaImg6.jpeg" alt="" />
+    <section class="sectionCard">
+      <div class="card">
+        <img src="../imagenes/ofertaImg4.jpeg" alt="" class="cardImg" />
+        <h2 class="cardImgTitle">Sofá</h2>
+        <p class="cardDescription">Sofá</p>
+      </div>
+      <div class="card">
+        <img src="../imagenes/ofertaImg5.jpeg" alt="" class="cardImg" />
+        <h2 class="cardImgTitle">Perfume</h2>
+        <p class="cardDescription">Perfume fresh</p>
+      </div>
+      <div class="card">
+        <img src="../imagenes/ofertaImg6.jpeg" alt="" class="cardImg" />
+        <h2 class="cardImgTitle">Sillón</h2>
+        <p class="cardDescription">Sillón rojo</p>
+      </div>
     </section>
-      <img src="../imagenes/ofertaImg7.jpeg" alt="" />
-      <img src="../imagenes/ofertaImg8.jpeg" alt="" />
-      <img src="../imagenes/ofertaImg9.jpeg" alt="" />
+    <section class="sectionCard">
+      <div class="card">
+        <img src="../imagenes/ofertaImg7.jpeg" alt="" class="cardImg" />
+        <h2 class="cardImgTitle">Silla</h2>
+        <p class="cardDescription">Silla a rrayas</p>
+      </div>
+      <div class="card">
+        <img src="../imagenes/ofertaImg8.jpeg" alt="" class="cardImg" />
+        <h2 class="cardImgTitle">Mueble</h2>
+        <p class="cardDescription">Mueble de reloj de arena</p>
+      </div>
+      <div class="card">
+        <img src="../imagenes/ofertaImg9.jpeg" alt="" class="cardImg" />
+        <h2 class="cardImgTitle">Calzado</h2>
+        <p class="cardDescription">Calzados deportivos Nike</p>
+      </div>
     </section>
     <footer>
       <div class="footer1">

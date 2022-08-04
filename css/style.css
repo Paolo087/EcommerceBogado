@@ -123,6 +123,10 @@ a {
   background-color: blueviolet;
 }
 
+.tituloOfertas {
+  align-items: center;
+}
+
 .ayudaIcon {
   max-width: 30px;
   max-width: 30px;
